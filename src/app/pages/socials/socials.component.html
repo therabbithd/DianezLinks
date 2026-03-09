@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="profile-card">
+        <div class="profile-header">
+            <div class="avatar">
+                <img src="assets/images/profile.png" alt="Profile Picture">
+            </div>
+            <h1>Mis Redes</h1>
+            <p>Conéctate conmigo</p>
+        </div>
+
+        <div class="links-container">
+            <app-link-button *ngFor="let link of links" [label]="link.label" [url]="link.url"></app-link-button>
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 10px 0;">
+            <app-link-button label="Volver" url="/" [isInternal]="true"></app-link-button>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 DianezLinks. All rights reserved.</p>
+        </div>
+    </div>
+</div>

@@ -1,21 +1,13 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { LinkButtonComponent } from './components/link-button.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, LinkButtonComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet],
+  template: '<router-outlet></router-outlet>',
+  styles: []
 })
 export class AppComponent {
   title = 'DianezLinks';
-
-  links = [
-    { label: 'LinkedIn', url: 'https://linkedin.com' },
-    { label: 'GitHub', url: 'https://github.com' },
-    { label: 'Twitter / X', url: 'https://twitter.com' },
-    { label: 'Portfolio', url: 'https://dianez.dev' }
-  ];
 }
