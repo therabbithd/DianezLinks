@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="profile-card">
+    <div class="profile-header">
+      <div class="avatar">
+        <img src="assets/images/profile.png" alt="Profile Picture">
+      </div>
+      <h1>DianezLinks</h1>
+      <p>Tech Enthusiast | Developer | Creator</p>
+    </div>
+
+    <div class="links-container">
+      <app-link-button *ngFor="let link of links" [label]="link.label" [url]="link.url">
+      </app-link-button>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 DianezLinks. All rights reserved.</p>
+    </div>
+  </div>
+</div>
