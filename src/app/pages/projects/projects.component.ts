@@ -13,5 +13,7 @@ export class ProjectsComponent {
   projects = [
     { label: 'Racing Bulb', url: 'https://github.com/therabbithd/RacingBulb' },
     { label: 'Universal Motorsport Timing', url: 'https://github.com/therabbithd/UniversalMotorsportTiming' },
+    { label: 'Ultimate Jerez Timing', url: 'https://github.com/therabbithd/UltimateJerezTiming/releases' }
+
   ];
 }
